@@ -628,9 +628,48 @@ img {
     margin-bottom: 4px;
 }
 
+.publication-type {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--blue);
+    display: block;
+    margin-bottom: 4px;
+}
+
 .publication-venue {
     font-size: 13px;
     color: var(--gray-500);
+}
+
+.publication-doi {
+    font-size: 12px;
+    color: var(--blue);
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.pub-book {
+    background: var(--amber-light);
+    color: var(--amber);
+}
+
+.pub-patent {
+    background: var(--green-light);
+    color: var(--green);
+}
+
+.pub-journal {
+    background: var(--indigo-light);
+    color: var(--indigo);
+}
+
+.section-subtitle {
+    font-size: 14px;
+    color: var(--gray-500);
+    margin-top: -24px;
+    margin-bottom: 32px;
 }
 
 /* ===== Education ===== */
