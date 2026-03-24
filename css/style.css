@@ -693,8 +693,9 @@ img {
     flex-shrink: 0;
     width: 56px;
     height: 56px;
+    max-width: 56px;
+    max-height: 56px;
     object-fit: contain;
-    border-radius: var(--radius);
 }
 
 .education-details h3 {
