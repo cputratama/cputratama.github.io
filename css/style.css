@@ -173,6 +173,8 @@ img {
 
 .hero-photo {
     margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
 }
 
 .profile-photo {
