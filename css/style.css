@@ -689,17 +689,11 @@ img {
     box-shadow: var(--shadow-sm);
 }
 
-.education-degree {
+.education-logo {
     flex-shrink: 0;
     width: 56px;
     height: 56px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--blue-light);
-    color: var(--blue);
-    font-size: 18px;
-    font-weight: 800;
+    object-fit: contain;
     border-radius: var(--radius);
 }
 
