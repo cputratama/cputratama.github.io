@@ -179,6 +179,7 @@ img {
 
 .hero-photo {
     margin-bottom: 24px;
+    display: none;
 }
 
 .profile-photo {
@@ -934,6 +935,11 @@ footer > .container > p {
         display: none !important;
     }
 
+    /* Show profile photo only in print */
+    .hero-photo {
+        display: block !important;
+    }
+
     /* Reset JS fade-in state */
     .section {
         opacity: 1 !important;
@@ -958,9 +964,19 @@ footer > .container > p {
         gap: 12px;
     }
 
-    /* Constrain project images */
+    /* Show project images in print */
     .project-image {
         height: 140px;
+        overflow: visible;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        display: block;
     }
 
     /* Avoid page breaks inside cards/items */
