@@ -179,7 +179,6 @@ img {
 
 .hero-photo {
     margin-bottom: 24px;
-    display: none;
 }
 
 .profile-photo {
@@ -933,11 +932,6 @@ footer > .container > p {
     .nav-toggle,
     .hero-cta {
         display: none !important;
-    }
-
-    /* Show profile photo only in print */
-    .hero-photo {
-        display: block !important;
     }
 
     /* Reset JS fade-in state */
