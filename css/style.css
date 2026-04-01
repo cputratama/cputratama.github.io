@@ -292,6 +292,27 @@ img {
     color: var(--gray-700);
 }
 
+.btn-pdf {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--gray-600);
+    background: transparent;
+    border: 1.5px solid var(--gray-300);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+    white-space: nowrap;
+}
+.btn-pdf:hover {
+    color: var(--blue);
+    border-color: var(--blue);
+    background: var(--blue-light);
+}
+
 /* ===== Sections ===== */
 .section {
     padding: 80px 0;
@@ -785,6 +806,10 @@ footer > .container > p {
         display: flex;
     }
 
+    .btn-pdf {
+        display: none;
+    }
+
     .nav-links {
         display: none;
         position: absolute;
@@ -896,5 +921,65 @@ footer > .container > p {
             opacity: 1;
             transform: translateY(0);
         }
+    }
+}
+
+/* ===== Print / PDF Export ===== */
+@media print {
+    /* Hide interactive/nav elements */
+    #navbar,
+    .btn-pdf,
+    .nav-toggle,
+    .hero-cta {
+        display: none !important;
+    }
+
+    /* Reset JS fade-in state */
+    .section {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+
+    /* Page setup */
+    @page {
+        margin: 20mm 15mm;
+    }
+
+    body {
+        font-size: 11pt;
+        color: #1e293b;
+        background: white;
+    }
+
+    /* Two-column layout for projects */
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    /* Constrain project images */
+    .project-image {
+        height: 140px;
+    }
+
+    /* Avoid page breaks inside cards/items */
+    .project-card,
+    .pub-item,
+    .exp-item,
+    .edu-item {
+        break-inside: avoid;
+    }
+
+    /* Remove decorative backgrounds */
+    .section-alt {
+        background: white;
+    }
+
+    /* Show URLs inline in footer */
+    footer a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 9pt;
+        color: #64748b;
     }
 }
