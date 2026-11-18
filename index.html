@@ -47,11 +47,12 @@
             <h1>Christoporus Deo Putratama</h1>
             <p class="hero-title">AI/ML Engineer &middot; Computer Vision Specialist</p>
             <p class="hero-description">
-                AI Engineer with 7+ years of experience in Machine Learning and Computer Vision,
+                AI Engineer with 7+ years in Machine Learning and Computer Vision,
                 holding an MSc in Artificial Intelligence (with Distinction) from the University of Southampton.
-                Experienced in developing and deploying deep learning solutions, with a strong focus on
-                computer vision using PyTorch. Proven track record in developing and deploying end-to-end
-                AI pipelines, medical imaging solutions, and large-scale computer vision systems.
+                Leading smart city video analytics on live city CCTV &mdash; vehicle counting, licence plate recognition,
+                crowd density estimation, traffic management and restricted-zone monitoring. I build and ship
+                end-to-end AI pipelines, from model design and training to GPU-accelerated, real-time deployment
+                on cloud and edge hardware.
             </p>
             <div class="hero-badges">
                 <span class="badge badge-primary">LPDP Awardee PK-245</span>
@@ -78,12 +79,13 @@
                         a team building industrial and surveillance CV systems.
                     </p>
                     <p>
-                        In 2024, I completed my <strong>MSc in Artificial Intelligence</strong> at the University of
+                        In 2025, I completed my <strong>MSc in Artificial Intelligence</strong> at the University of
                         Southampton (UK) with Distinction, funded by the prestigious <strong>LPDP scholarship</strong>
                         (Indonesia Endowment Fund for Education).
                     </p>
                     <p>
-                        I am currently an AI Engineer at <strong>PT Jelajah Data Semesta</strong> (Bali Tower Group) in Jakarta, Indonesia.
+                        I am currently an AI Engineer at <strong>PT Jelajah Data Semesta</strong> (Bali Towerindo Sentra Tbk) in Jakarta,
+                        leading smart city video analytics on live city CCTV and serving as the group's in-house computer vision consultant.
                     </p>
                 </div>
                 <div class="about-highlights">
@@ -92,7 +94,7 @@
                         <span class="highlight-label">Years Experience</span>
                     </div>
                     <div class="highlight-card">
-                        <span class="highlight-number">7</span>
+                        <span class="highlight-number">8</span>
                         <span class="highlight-label">Major Projects</span>
                     </div>
                     <div class="highlight-card">
@@ -124,7 +126,16 @@
                     <div class="tags">
                         <span class="tag tag-indigo">PyTorch</span>
                         <span class="tag tag-indigo">TensorFlow</span>
+                        <span class="tag tag-indigo">TensorRT</span>
+                        <span class="tag tag-indigo">Triton Inference Server</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>AI-assisted Development</h3>
+                    <div class="tags">
                         <span class="tag tag-indigo">Claude Code</span>
+                        <span class="tag tag-indigo">Codex</span>
+                        <span class="tag tag-indigo">Agentic AI Programming</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -135,6 +146,9 @@
                         <span class="tag tag-green">Linux</span>
                         <span class="tag tag-green">AWS</span>
                         <span class="tag tag-green">GCP</span>
+                        <span class="tag tag-green">NVDEC</span>
+                        <span class="tag tag-green">SQL</span>
+                        <span class="tag tag-green">BigQuery</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -142,6 +156,7 @@
                     <div class="tags">
                         <span class="tag tag-amber">Object Detection</span>
                         <span class="tag tag-amber">Segmentation</span>
+                        <span class="tag tag-amber">Tracking</span>
                         <span class="tag tag-amber">Activity Recognition</span>
                         <span class="tag tag-amber">Pose Estimation</span>
                         <span class="tag tag-amber">Face Identification</span>
@@ -153,6 +168,7 @@
                     <div class="tags">
                         <span class="tag tag-pink">Jetson Nano</span>
                         <span class="tag tag-pink">Jetson Orin NX</span>
+                        <span class="tag tag-pink">Jetson AGX Xavier</span>
                         <span class="tag tag-pink">OpenVINO (Intel)</span>
                         <span class="tag tag-pink">NVIDIA DeepStream</span>
                     </div>
@@ -172,11 +188,15 @@
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <h3>AI Engineer — Assistant Manager</h3>
-                            <span class="timeline-company">PT Jelajah Data Semesta (JDS), Bali Tower Group — Jakarta, Indonesia</span>
+                            <span class="timeline-company">PT Jelajah Data Semesta (JDS), Bali Towerindo Sentra Tbk — Jakarta, Indonesia</span>
                         </div>
                         <span class="timeline-date">May 2026 – Present</span>
                         <ul>
-                            <li>Handle multiple video analytics projects, developing and integrating deep learning models into production systems.</li>
+                            <li>Leads computer vision projects from scratch to proof of concept across multi-camera stream deployments: vehicle counting with in/out direction, licence plate recognition, crowd density estimation, Clear Area dwell detection in restricted zones, traffic management, and parking surveillance.</li>
+                            <li>Migrated and refactored the real-time video analytics system to an NVIDIA-accelerated architecture, analysing 2.4&times; more video per server and lowering hardware cost per camera.</li>
+                            <li>Scaled each server to 40 live cameras at full frame rate, 2.5&times; the previous per-camera rate, including full-HD streams.</li>
+                            <li>Lifted vehicle-count accuracy from 93% to 98% against manual counts across five city cameras by improving the detection model, enhancing the tracker, and raising processing throughput.</li>
+                            <li>In-house computer vision consultant for the group; delivered an intelligent transportation systems (ITS) proof of concept with industry partners and government bodies.</li>
                         </ul>
                     </div>
                 </div>
@@ -206,6 +226,7 @@
                         <ul>
                             <li>Designed and deployed computer vision pipelines for industrial and surveillance applications, integrating object detection, activity recognition, and tracking models for real-time analytics.</li>
                             <li>Led a small team of engineers in model optimisation, dataset management (CVAT, Streamlit), and deployment using Docker.</li>
+                            <li>Built autonomous tram perception on Jetson AGX Xavier.</li>
                         </ul>
                     </div>
                 </div>
@@ -249,6 +270,25 @@
             <span class="section-label">Projects</span>
             <h2 class="section-title">Featured Work</h2>
             <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-image project-image-placeholder">
+                        <div class="placeholder-content">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+                            <span>Smart City Video Analytics</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Smart City Video Analytics</h3>
+                        <p>Real-time analytics on live city CCTV at JDS: vehicle counting with direction, licence plate recognition, crowd density, restricted-zone dwell detection and traffic management. NVIDIA-accelerated pipeline running 40 full-frame-rate cameras per server, with vehicle-count accuracy raised from 93% to 98%.</p>
+                        <div class="tags">
+                            <span class="tag tag-blue">Object Detection</span>
+                            <span class="tag tag-blue">Tracking</span>
+                            <span class="tag tag-indigo">TensorRT</span>
+                            <span class="tag tag-green">Production</span>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="project-card">
                     <div class="project-image">
